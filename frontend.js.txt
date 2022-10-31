@@ -1,0 +1,13 @@
+//idk man 
+let num = 5;
+
+console.log(num);
+
+if(num != 6)
+{
+    console.log("bruh this sh*t aint six bro");
+}
+else
+{
+    console.log("yooooo");
+}
