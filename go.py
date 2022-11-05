@@ -9,11 +9,11 @@ import statistics
 # basically taking a reading every half a second - the size of the data 
 # divided by the sample rate gives us 1 second chunks so I chop 
 # sample rate in half for half second chunks
-chunks = np.array_split(wavdata, wavdata.size/(samprate/2))
+chunks = np.array_split(wavdata, wavdata.size / (samprate / 2))
 for chunk in chunks:
     print(chunk)
     print(chunk.size)
-dbs = [20*math.log10( math.sqrt(statistics.mean(chunk**2)) ) for chunk in chunks]
+dbs = [20 * math.log10( math.sqrt(statistics.mean(chunk ** 2)) ) for chunk in chunks]
 print(dbs)
 print("Input wav size is: %d" % wavdata.size)
 print("Average dB value is: %.2f" % statistics.mean(dbs))
