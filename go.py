@@ -1,6 +1,6 @@
 from scipy.io.wavfile import read
 #samprate, wavdata = read('ALMOST PANDORAS BOX FINAL.wav')
-#filename = input("Please enter the name of the audio file you wish to analyze -must usename as it is shown in folder with .wav at the end\n")
+filename = str(input("Please enter the name of the audio file you wish to analyze -must use name as it is shown in folder with .wav at the end\n"))
 
 samprate, wavdata = read("intro.wav")
 import numpy as np
